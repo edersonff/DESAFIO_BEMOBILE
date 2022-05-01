@@ -1,0 +1,912 @@
+{
+	"info": {
+		"_postman_id": "c5849f6b-cefc-41c1-8dce-c853c1118d85",
+		"name": "Desafio BEMOBILE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "edersonff_@hotmail.com.br",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "edersonff_@hotmail.com.br",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "edersonff_@hotmail.com.br",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "edersonff_@hotmail.com.br",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/user",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/client/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/client/1/00-2022",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"client",
+								"1",
+								"00-2022"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ederson Franzen Fagundes",
+									"type": "default"
+								},
+								{
+									"key": "cpf",
+									"value": "09848026907",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/client",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/client/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"client",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Ederson",
+									"type": "default"
+								},
+								{
+									"key": "cpf",
+									"value": "09848026907",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/client",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"client"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/address/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"address",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/address/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"address",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cep",
+									"value": "89254260",
+									"type": "default"
+								},
+								{
+									"key": "country",
+									"value": "Brasil",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "Jaraguá do Sul",
+									"type": "default"
+								},
+								{
+									"key": "street",
+									"value": "Willy dorow",
+									"type": "default"
+								},
+								{
+									"key": "number",
+									"value": "29",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/address/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"address",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/address/3",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"address",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cep",
+									"value": "89254260",
+									"type": "default"
+								},
+								{
+									"key": "country",
+									"value": "Brazil",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "Jaraguá do Sul",
+									"type": "default"
+								},
+								{
+									"key": "street",
+									"value": "Willy dorow",
+									"type": "default"
+								},
+								{
+									"key": "number",
+									"value": "29",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/address/4",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"address",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phone",
+			"item": [
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/phone/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"phone",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/phone/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"phone",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "47999345365",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/phone/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"phone",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/phone/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"phone",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "4799345364",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/phone/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"phone",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/product/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/product/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Harry potter e a pedra filosofal\", \r\n\"author\":\"J. K. Rowling\", \r\n\"description\":\"Deveria ser um livro só para o público infanto-juvenil. Mas, no mundo inteiro, gente de idades variadas lê Harry Potter - um fenômeno da literatura mundial que desafia crenças e estimativas. Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo.No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer, ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo. Harry Potter conduz a discussões metafísicas, aborda o eterno confronto entre o bem e o mal, evidencia algumas mazelas da sociedade, como o preconceito, a divisão de classes através do dinheiro e do berço, a inveja, o egoísmo, a competitividade exacerbada, a busca pelo ideal - a necessidade de aprender, nem que seja à força, que a vida é feita de derrotas e vitórias e que isso é importante para a formação básica de um adulto.\", \r\n\"quantity\": 100,\r\n\"price\": 24.90, \r\n\"publication_date\": \"2000-04-07\", \r\n\"language\": \"Portuguese\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/product/2",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"title\":\"Harry potter e a pedra filosofal - Capa dura\", \r\n\"author\":\"J. K. Rowling\", \r\n\"description\":\"Deveria ser um livro só para o público infanto-juvenil. Mas, no mundo inteiro, gente de idades variadas lê Harry Potter - um fenômeno da literatura mundial que desafia crenças e estimativas. Harry Potter é um garoto cujos pais, feiticeiros, foram assassinados por um poderosíssimo bruxo quando ele ainda era um bebê. Ele foi levado, então, para a casa dos tios que nada tinham a ver com o sobrenatural. Pelo contrário. Até os 10 anos, Harry foi uma espécie de gata borralheira: maltratado pelos tios, herdava roupas velhas do primo gorducho, tinha óculos remendados e era tratado como um estorvo.No dia de seu aniversário de 11 anos, entretanto, ele parece deslizar por um buraco sem fundo, como o de Alice no país das maravilhas, que o conduz a um mundo mágico. Descobre sua verdadeira história e seu destino: ser um aprendiz de feiticeiro até o dia em que terá que enfrentar a pior força do mal, o homem que assassinou seus pais. O menino de olhos verde, magricela e desengonçado, tão habituado à rejeição, descobre, também, que é um herói no universo dos magos. Potter fica sabendo que é a única pessoa a ter sobrevivido a um ataque do tal bruxo do mal e essa é a causa da marca em forma de raio que ele carrega na testa. Ele não é um garoto qualquer, ele sequer é um feiticeiro qualquer, ele é Harry Potter, símbolo de poder, resistência e um líder natural entre os sobrenaturais. A fábula, recheada de fantasmas, paredes que falam, caldeirões, sapos, unicórnios, dragões e gigantes, não é, entretanto, apenas um passatempo. Harry Potter conduz a discussões metafísicas, aborda o eterno confronto entre o bem e o mal, evidencia algumas mazelas da sociedade, como o preconceito, a divisão de classes através do dinheiro e do berço, a inveja, o egoísmo, a competitividade exacerbada, a busca pelo ideal - a necessidade de aprender, nem que seja à força, que a vida é feita de derrotas e vitórias e que isso é importante para a formação básica de um adulto.\", \r\n\"quantity\": 100,\r\n\"price\": 24.90, \r\n\"publication_date\": \"2000-04-07\", \r\n\"language\": \"Portuguese\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sale",
+			"item": [
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "productId",
+											"value": "1",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{URL}}/sale/product",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"sale",
+										"product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{URL}}/sale/product/1",
+									"host": [
+										"{{URL}}"
+									],
+									"path": [
+										"sale",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/sale/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sale",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/sale/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sale",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{URL}}/sale/1",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sale",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Completed",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/sale/",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"sale",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "Mg.uaP_7KA0XnwseDxfK01Rp8TQNNlSomk2-z8DUrNrE8YogvBRYT088j2ydkaL",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://127.0.0.1:3333/api",
+			"type": "default"
+		}
+	]
+}
