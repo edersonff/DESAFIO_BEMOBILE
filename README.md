@@ -19,6 +19,7 @@ Projeto baseado no desafio de back-end da empresa BE MOBILE, com objetivo de cri
 - Erros constantes na ultilização da versão mais recente do `@adonisjs/lucid`, fazendo-se necessario ultilizar a sua versão `16.3.2`, assim como `@adonisjs/auth@8.0.9`
 - Erros na ulitilização de timestamp para mysql(com a propriedade `useTz`), fazendo-se necessario ultilizar valores default e caracteristica não nula.
 - Configuração _many-to-many_, necessitando da configuração do _pivotTable_ no model.
+- Conhecimento básico/pouca experiencia com typescript
 
 ## Banco de dados conceitual ultilizado       |         Rotas da API ultilizados
 <div style="display:flex, justify-contet:center, align-items:center">
